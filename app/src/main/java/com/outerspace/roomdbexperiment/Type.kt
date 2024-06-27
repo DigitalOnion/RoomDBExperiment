@@ -1,4 +1,4 @@
-package com.outerspace.roomdbexperiment.ui.theme
+package com.outerspace.roomdbexperiment
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

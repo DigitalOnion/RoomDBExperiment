@@ -6,23 +6,20 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.outerspace.roomdbexperiment.ui.theme.RoomDBExperimentTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             RoomDBExperimentTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    NamesScreen("Android")
                 }
             }
         }
@@ -30,17 +27,15 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+fun NamesScreen(name: String, modifier: Modifier = Modifier) {
+
+
 }
 
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     RoomDBExperimentTheme {
-        Greeting("Android")
+        NamesScreen("Android")
     }
 }

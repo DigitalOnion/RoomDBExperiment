@@ -1,4 +1,4 @@
-package com.outerspace.roomdbexperiment.ui.theme
+package com.outerspace.roomdbexperiment
 
 import android.app.Activity
 import android.os.Build
