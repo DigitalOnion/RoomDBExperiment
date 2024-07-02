@@ -13,5 +13,4 @@ class RoomDBExperimentApplication: Application() {
         super.onCreate()
         appC = applicationContext
     }
-
 }
